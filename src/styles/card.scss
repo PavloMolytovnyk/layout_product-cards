@@ -3,31 +3,35 @@
   height: 100%;
   box-sizing: border-box;
   padding-top: 33px;
-}
 
-.card__back {
-  margin-inline: 20px;
-  height: 134px;
-  width: 160px;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+  &__back {
+    margin-inline: 20px;
+    height: 134px;
+    width: 160px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 
-.card__text {
-  margin: 36px 17px 18px;
-}
+  &__text {
+    margin: 36px 17px 18px;
+  }
 
-.card__info {
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 18px;
-  margin-bottom: 4px;
-}
+  &__info {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    margin-bottom: 4px;
+  }
 
-.card__product {
-  font-size: 10px;
-  line-height: 14px;
-  margin-top: 0;
+  &__product {
+    font-size: 10px;
+    line-height: 14px;
+    margin-top: 0;
+  }
+
+  &__link {
+    text-decoration: none;
+  }
 }
 
 .buy {
@@ -42,45 +46,41 @@
   justify-content: center;
   line-height: 11px;
   margin: 0 auto;
+
+  &__text {
+    font-weight: 700;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+  }
+
+  &:hover {
+    background-color: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(0, 172, 220, 1);
+    color: rgba(0, 172, 220, 1);
+    line-height: 10px;
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .price {
   display: flex;
   justify-content: space-between;
   margin: 24px 17px 15px;
-}
 
-.price__text {
-  margin: 0;
-}
+  &__text {
+    margin: 0;
+  }
 
-.price__text:first-child {
-  font-weight: 350;
-  font-size: 12px;
-  line-height: 20px;
-}
+  &__text:first-child {
+    font-weight: 350;
+    font-size: 12px;
+    line-height: 20px;
+  }
 
-.price__text:last-child {
-  font-weight: 700;
-  font-size: 16px;
-}
-
-.card__link {
-  text-decoration: none;
-}
-
-.buy__text {
-  font-weight: 700;
-  font-size: 14px;
-  display: flex;
-  justify-content: center;
-}
-
-.buy:hover {
-  background-color: rgba(255, 255, 255, 1);
-  border: 1px solid rgba(0, 172, 220, 1);
-  color: rgba(0, 172, 220, 1);
-  line-height: 10px;
-  display: flex;
-  justify-content: center;
+  &__text:last-child {
+    font-weight: 700;
+    font-size: 16px;
+  }
 }
