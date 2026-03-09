@@ -1,0 +1,82 @@
+.card {
+  width: 200px;
+  height: 100%;
+  box-sizing: border-box;
+  padding-top: 33px;
+}
+
+.card__back {
+  margin-inline: 19px;
+  height: 134px;
+  width: 164px;
+  background-image: url(../images/imac.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card__text {
+  margin: 38px 16px 18px;
+}
+
+.card__info {
+  font-weight: 500;
+  font-size: 12px;
+  display: inline;
+}
+
+.card__product {
+  font-size: 10px;
+  line-height: 14px;
+  margin-top: 4px;
+}
+
+.buy {
+  background-color: rgba(0, 172, 220, 1);
+  width: 166px;
+  height: 40px;
+  border-radius: 5px;
+  margin-inline: 16px;
+  box-sizing: border-box;
+  color: rgba(255, 255, 255, 1);
+
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.price {
+  display: flex;
+  justify-content: space-between;
+  margin: 24px 16px 16px;
+}
+
+.price__text {
+  margin: 0;
+}
+
+.price__text:first-child {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.price__text:last-child {
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.card__link {
+  text-decoration: none;
+}
+
+.buy__text {
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.buy:hover {
+  background-color: rgba(255, 255, 255, 1);
+  border: 1px solid rgba(0, 172, 220, 1);
+  color: rgba(0, 172, 220, 1);
+}
