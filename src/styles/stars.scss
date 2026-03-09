@@ -1,6 +1,6 @@
-.stars--4 {
-  margin: 0;
+.stars {
   display: flex;
+  margin: 0;
 
   &__star {
     width: 16px;
@@ -9,21 +9,10 @@
     background-repeat: no-repeat;
     margin-inline: 2px;
   }
-
-  & &__star:nth-child(-n + 4) {
-    background-image: url(../images/star-active.svg);
-  }
 }
 
-.star {
-  display: flex;
-  justify-content: space-between;
-  margin: 17px;
-
-  &__reviews {
-    display: inline-block;
-    font-weight: 400;
-    font-size: 10px;
-    margin: 0;
+@for $i from 1 through 5 {
+  .stars--#{$i} .stars__star:nth-child(-n + #{$i}) {
+    background-image: url(../images/star-active.svg);
   }
 }
